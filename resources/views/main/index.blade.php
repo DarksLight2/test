@@ -1,4 +1,4 @@
-<x-default-layout :title="$title">
+
     <div class="container">
         <section class="wellcome">
             <div class="wellcome__left">
@@ -20,4 +20,4 @@
             </div>
         </section>
     </div>
-</x-default-layout>
+
