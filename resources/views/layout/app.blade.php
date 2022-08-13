@@ -8,6 +8,7 @@
     <title>Laravel-Pet</title>
 </head>
 <body>
-
+    @include('layout.header')
+    @yield('content')
 </body>
 </html>
