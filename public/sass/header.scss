@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "nicomoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/nicomoji/nicomoji-regular.ttf");
+}
+@font-face {
+  font-family: "acula";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/acula/aculaRegular.ttf");
+}
+
+.container {
+  margin: 0 auto;
+  top: 0;
+
+  max-width: 1180px;
+}
+
+body {
+  background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+  font-family: "acula";
+  height: 2000px;
+}
+
+a {
+  color: #E4E4E4;
+  white-space: nowrap;
+}
+
+header {
+  .headerBlock {
+    display: flex;
+    align-items: center;
+    column-gap: 220px;
+
+    padding: 30px;
+    .logoBlock {
+      a {
+        display: flex;
+        align-items: center;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+
+        column-gap: 10px;
+        img {
+
+        }
+      }
+    }
+
+    nav {
+      max-width: 710px;
+      ul {
+        display: flex;
+        column-gap: 145px;
+        li {
+          a {
+            font-family: "acula";
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wellcome {
+  .wellcome__left {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 27px;
+    width: 50%;
+    margin-top: 200px;
+    h2 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 24px;
+      color: antiquewhite;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 81px;
+      color: antiquewhite;
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      color: antiquewhite;
+    }
+    button {
+      text-transform: uppercase;
+      color: black;
+      background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+      box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+      border-radius: 6px;
+
+      font-family: nicomoji;
+      font-weight: 700;
+      line-height: 20px;
+      width: 200px;
+      height: 47px;
+    }
+  }
+}
