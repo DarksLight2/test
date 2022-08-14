@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Main\FeedbackController;
 use App\Http\Controllers\Main\IndexController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [IndexController::class, 'home']);
+Route::get('/', [IndexController::class, 'home'])->name('home');
+
+Route::prefix('feedback')->group(function () {
+    Route::get('/', [FeedbackController::class, 'index'])->name('feedback.index');
+    Route::post('/send', [FeedbackController::class, 'send'])->name('feedback.send');
+});
 //Route::get('/dashboard', function () {
 //    return view('dashboard');
 //})->middleware(['auth'])->name('dashboard');
