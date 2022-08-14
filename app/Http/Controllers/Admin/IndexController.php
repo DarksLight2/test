@@ -9,6 +9,6 @@ class IndexController extends Controller
 {
     public function home ()
     {
-        return abort(500);
+        return abort(404);
     }
 }
